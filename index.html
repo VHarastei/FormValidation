@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <form novalidate class="form">
+    <p>
+      <label for="email">
+        <span>Please enter an email address:</span>
+        <input type="email" id="email" name="email" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    
+    <p>
+      <label for="country">
+        <span>Please enter country:</span>
+        <input type="text" id="country" name="country" required minlength="3">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="zip-code">
+        <span>Please enter zip-code:</span>
+        <input type="number" id="zip-code" name="zip-code" required min="10000" max="99999" minlength="3" autocomplete="off">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="password">
+        <span>Please enter password:</span>
+        <input type="password" id="password" class="password" name="password"  required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="confirm">
+        <span>Please enter password-confirmation:</span>
+        <input type="password" id="confirm" class="password" name="confirm" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <button>Submit</button>
+  </form>
+</body>
+</html>
